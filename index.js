@@ -8,6 +8,7 @@ app.use(bodyParserMiddleWare);
 
 // routes
 app.get("/record", routes.record);
+app.get("/*", routes.mock);
 
 const PORT = 8080;
 app.listen(PORT, () => {
